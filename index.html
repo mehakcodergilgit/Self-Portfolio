@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehak Batool — Frontend Web Developer</title>
+<meta name="description" content="Portfolio of Mehak Batool, Frontend Web Developer specializing in HTML, CSS & JavaScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-bracket">&lt;</span>Mehak<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-nav>home</a>
+      <a href="#about" class="nav-link" data-nav>about</a>
+      <a href="#skills" class="nav-link" data-nav>skills</a>
+      <a href="#projects" class="nav-link" data-nav>projects</a>
+      <a href="#contact" class="nav-link" data-nav>contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-ghost nav-cta">say hi</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+
+    <div class="hero-text">
+      <p class="eyebrow"><span class="dot"></span> available for frontend roles</p>
+      <h1 class="hero-title">
+        Building interfaces<br>
+        that feel <span class="hero-accent">alive</span>.
+      </h1>
+      <p class="hero-sub">
+        I'm Mehak Batool — a frontend web developer crafting responsive,
+        user-friendly websites with HTML, CSS &amp; JavaScript. Currently
+        interning at <strong>Nextgen Arts</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">view my work</a>
+        <a href="#contact" class="btn btn-outline">get in touch</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">projects shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">active internship</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">core languages</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-editor" aria-hidden="true">
+      <div class="editor-window">
+        <div class="editor-tabbar">
+          <span class="editor-dot red"></span>
+          <span class="editor-dot yellow"></span>
+          <span class="editor-dot green"></span>
+          <span class="editor-filename">mehak.js</span>
+        </div>
+        <div class="editor-body">
+          <pre class="editor-code"><code id="typedCode"></code><span class="cursor">&#9608;</span></pre>
+        </div>
+        <div class="editor-statusbar">
+          <span>⎇ main</span>
+          <span id="statusMsg">UTF-8 · JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+    <span>scroll</span>
+    <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><rect x="1" y="1" width="12" height="18" rx="6" stroke="currentColor" stroke-width="1.2"/><circle class="scroll-cue-dot" cx="7" cy="6" r="1.6" fill="currentColor"/></svg>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner about-grid">
+    <div class="section-head">
+      <p class="section-kicker">01 — about</p>
+      <h2 class="section-title">A little about me</h2>
+    </div>
+
+    <div class="about-body">
+      <p>
+        👋 Hi, I'm <strong>Mehak</strong> — a frontend web developer who enjoys
+        turning ideas into responsive, user-friendly websites. I hold a
+        Master's degree and have hands-on experience with modern web
+        technologies, focused on writing clean, semantic markup and styles
+        that hold up on every screen size.
+      </p>
+      <p>
+        I'm currently working as a Web Developer Intern at
+        <strong>Nextgen Arts</strong>, where I build and ship real client-facing
+        pages — sharpening my eye for detail, performance and usability along
+        the way.
+      </p>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <span class="about-card-icon">🎓</span>
+          <h3>Education</h3>
+          <p>Master's degree, with a focus on web technologies</p>
+        </div>
+        <div class="about-card">
+          <span class="about-card-icon">💼</span>
+          <h3>Currently</h3>
+          <p>Web Developer Intern @ Nextgen Arts</p>
+        </div>
+        <div class="about-card">
+          <span class="about-card-icon">🚀</span>
+          <h3>Focus</h3>
+          <p>Responsive UI, clean code, real-world projects</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">02 — stack</p>
+      <h2 class="section-title">Tools I build with</h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">HTML5</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+        <p class="skill-note">Semantic, accessible markup</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">CSS3</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        <p class="skill-note">Responsive layouts, Flexbox &amp; Grid</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+        <p class="skill-note">DOM, interactivity, ES6+</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Git &amp; GitHub</span>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+        <p class="skill-note">Version control &amp; collaboration</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Responsive Design</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        <p class="skill-note">Mobile-first, cross-device</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">UI/UX Basics</span>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+        <p class="skill-note">Wireframing &amp; clean layouts</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">03 — experience</p>
+      <h2 class="section-title">Where I've worked</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Web Developer Intern</h3>
+            <span class="timeline-date">Present</span>
+          </div>
+          <p class="timeline-org">Nextgen Arts</p>
+          <p>
+            Building and maintaining responsive web pages, translating designs
+            into clean HTML/CSS/JS, and collaborating with the team on
+            client-facing projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Master's Degree</h3>
+            <span class="timeline-date">Completed</span>
+          </div>
+          <p class="timeline-org">Higher Education</p>
+          <p>
+            Built a strong foundation in web fundamentals while completing my
+            Master's, laying the groundwork for a frontend development path.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section-alt" id="projects">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">04 — projects</p>
+      <h2 class="section-title">Things I've built</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-folder">📁</span>
+          <span class="project-visibility">public</span>
+        </div>
+        <h3 class="project-name">hero-Section</h3>
+        <p class="project-desc">
+          A polished, responsive hero-section component — built to explore
+          layout composition, typography and CSS animation for landing pages.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/mehakcodergilgit/hero-Section" target="_blank" rel="noopener">Code →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-folder">📁</span>
+          <span class="project-visibility">public</span>
+        </div>
+        <h3 class="project-name">Vision Higher Secondary School</h3>
+        <p class="project-desc">
+          A full website concept for an educational institute — informational
+          pages, responsive navigation, and a clean, trustworthy layout.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/mehakcodergilgit/Vision-higher-secondary-school" target="_blank" rel="noopener">Code →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-folder">📁</span>
+          <span class="project-visibility">public</span>
+        </div>
+        <h3 class="project-name">Self-Portfolio</h3>
+        <p class="project-desc">
+          An earlier iteration of my personal portfolio — practicing layout
+          structure, responsive design patterns and personal branding online.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/mehakcodergilgit/Self-Portfolio" target="_blank" rel="noopener">Code →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="section-inner contact-grid">
+    <div class="section-head">
+      <p class="section-kicker">05 — contact</p>
+      <h2 class="section-title">Let's build something<br>together.</h2>
+      <p class="contact-sub">
+        Have a role, a project, or just want to say hi? My inbox is open.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:mehak@nextgenarts.pk" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">mehak@nextgenarts.pk</span>
+        </a>
+        <a href="https://github.com/mehakcodergilgit" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-label">GitHub</span>
+          <span class="contact-link-value">@mehakcodergilgit</span>
+        </a>
+        <a href="#" class="contact-link">
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-value">/in/mehak-batool</span>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <span class="form-error" data-error-for="name"></span>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <span class="form-error" data-error-for="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        <span class="form-error" data-error-for="message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">
+        <span class="btn-text">send message</span>
+      </button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>© <span id="year"></span> Mehak Batool. Built with HTML, CSS &amp; JavaScript.</p>
+    <a href="#home" class="footer-top">back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
