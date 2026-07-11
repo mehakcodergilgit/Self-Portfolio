@@ -426,7 +426,7 @@ h1,h2,h3{ font-family:var(--font-display); }
   padding: 1rem 1.3rem;
   background: var(--surface);
   border:1px solid var(--border);
-  border-radius: var(--radius-sm);
+  border-adius: var(--radius-sm);
   transition: border-color .2s var(--ease), transform .2s var(--ease);
 }
 .contact-link:hover{ border-color: var(--cyan); transform: translateX(2px); }
