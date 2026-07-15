@@ -3,6 +3,45 @@
    ========================================================== */
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ---------- Theme toggle (dark / light) ---------- */
+  const themeToggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+
+  function currentTheme() {
+    return root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+  }
+
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    if (themeToggle) {
+      themeToggle.setAttribute(
+        'aria-label',
+        theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'
+      );
+    }
+    try { localStorage.setItem('mb-theme', theme); } catch (e) { /* storage unavailable */ }
+  }
+
+  // Sync the toggle's label with whatever the inline head script already set
+  applyTheme(currentTheme());
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      applyTheme(currentTheme() === 'light' ? 'dark' : 'light');
+      try { localStorage.setItem('mb-theme-manual', '1'); } catch (e) { /* storage unavailable */ }
+    });
+  }
+
+  // Follow the OS theme live, unless the visitor picked one manually
+  if (window.matchMedia) {
+    const media = window.matchMedia('(prefers-color-scheme: light)');
+    media.addEventListener?.('change', (e) => {
+      let manual = false;
+      try { manual = !!localStorage.getItem('mb-theme-manual'); } catch (err) { /* ignore */ }
+      if (!manual) applyTheme(e.matches ? 'light' : 'dark');
+    });
+  }
+
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

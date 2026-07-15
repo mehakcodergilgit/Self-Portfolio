@@ -167,6 +167,10 @@ h1,h2,h3{ font-family:var(--font-display); }
   display:none; flex-direction:column; justify-content:center; gap:5px;
   width:32px; height:32px; background:none; border:none; cursor:pointer;
 }
+.mood{
+  width: 10%; height: 30%; background-color: #256dff;
+  display: flex; justify-content: right;
+}
 .nav-toggle span{ display:block; height:2px; width:100%; background: var(--text); border-radius:2px; transition: transform .3s var(--ease), opacity .3s var(--ease); }
 
 /* ==========================================================
